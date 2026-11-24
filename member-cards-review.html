@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A Lot Happened Here — Member Cards Review</title>
+<style>
+  @page { size: A4 landscape; margin: 12mm; }
+  :root { --paper:#f2e8d8; --ink:#34333a; --coral:#d96c4f; --sand:#d7a56d; --olive:#526b57; }
+  * { box-sizing:border-box }
+  body { margin:0; background:#e9e0d3; color:var(--ink); font:14px/1.4 Arial,sans-serif; }
+  .notice { max-width:900px; margin:24px auto 16px; padding:14px 18px; background:#fff8eb; border-left:4px solid var(--coral); }
+  .notice strong { display:block; margin-bottom:4px; }
+  .sheet { width:fit-content; margin:18px auto 36px; display:grid; grid-template-columns:repeat(3,85.6mm); gap:8mm; }
+  .card { width:85.6mm; height:54mm; padding:5mm; position:relative; overflow:hidden; border:1px solid #cdbca4; background:var(--paper); display:grid; grid-template-columns:1fr 25mm; align-items:center; gap:4mm; box-shadow:4px 5px 0 #34333a1c; }
+  .card:before { content:""; position:absolute; width:5mm; inset:0 auto 0 0; background:var(--accent); }
+  .card-copy { padding-left:2mm; }
+  .brand { font-size:8px; font-weight:bold; letter-spacing:.14em; margin:0 0 5mm; }
+  .brand span { color:var(--accent); font-size:14px; vertical-align:-1px; margin-right:1.2mm; }
+  h2 { margin:0 0 2mm; font: bold 20px/1 Georgia,serif; }
+  .tagline { margin:0; max-width:46mm; font: italic 11px/1.3 Georgia,serif; color:#66616a; }
+  .micro { position:absolute; left:7mm; bottom:3.2mm; font:7px/1.2 monospace; letter-spacing:.08em; color:#736d70; }
+  .qr-slot { height:25mm; width:25mm; border:1px dashed var(--accent); display:grid; place-items:center; text-align:center; background:#fffaf2; padding:2mm; }
+  .qr-slot b { display:block; font: bold 8px/1.3 monospace; color:var(--accent); letter-spacing:.05em; }
+  .qr-slot small { display:block; margin-top:1mm; font:6px/1.25 monospace; overflow-wrap:anywhere; color:#716a6b; }
+  .member-manar { --accent:#d96c4f } .member-mostafa { --accent:#526b57 } .member-tasneem { --accent:#c19058 }
+  .member-ali { --accent:#55535d } .member-malak { --accent:#718c87 } .member-mohamed { --accent:#c67f72 }
+  @media (max-width:900px) and (min-width:621px) { .sheet { transform:scale(.8); transform-origin:top center; margin-bottom:-22mm } }
+  @media (max-width:620px) { .sheet { width:min(100% - 24px,360px); grid-template-columns:1fr; gap:12px } .card { width:100%; height:205px; padding:20px; grid-template-columns:1fr 96px; gap:14px } .card:before { width:7px } .card-copy { padding-left:7px } .brand { margin-bottom:24px } h2 { font-size:24px } .tagline { max-width:190px; font-size:14px } .micro { left:28px; bottom:13px } .qr-slot { width:90px;height:90px;padding:8px } .qr-slot b {font-size:10px} .qr-slot small {font-size:7px} }
+  @media print { body { background:white } .notice { display:none } .sheet { margin:0; gap:8mm; transform:none } .card { box-shadow:none; break-inside:avoid; print-color-adjust:exact; -webkit-print-color-adjust:exact } }
+</style>
+</head>
+<body>
+<div class="notice"><strong>Card layout review — QR codes are not ready to print yet.</strong>The six designs use each person’s member link. The QR squares will become scannable after the site is published on Vercel and its HTTPS URL is verified.</div>
+<main class="sheet" aria-label="Six personalized member card designs">
+  <article class="card member-manar"><div class="card-copy"><p class="brand"><span>✳</span>A LOT HAPPENED HERE</p><h2>Manar</h2><p class="tagline">Six people. One story. Still going.</p></div><div class="qr-slot"><div><b>QR GOES<br/>HERE</b><small>/?member=manar</small></div></div><p class="micro">AND WE’RE NOT DONE YET.</p></article>
+  <article class="card member-mostafa"><div class="card-copy"><p class="brand"><span>✳</span>A LOT HAPPENED HERE</p><h2>Mostafa</h2><p class="tagline">Six people. One story. Still going.</p></div><div class="qr-slot"><div><b>QR GOES<br/>HERE</b><small>/?member=mostafa</small></div></div><p class="micro">AND WE’RE NOT DONE YET.</p></article>
+  <article class="card member-tasneem"><div class="card-copy"><p class="brand"><span>✳</span>A LOT HAPPENED HERE</p><h2>Tasneem</h2><p class="tagline">Six people. One story. Still going.</p></div><div class="qr-slot"><div><b>QR GOES<br/>HERE</b><small>/?member=tasneem</small></div></div><p class="micro">AND WE’RE NOT DONE YET.</p></article>
+  <article class="card member-ali"><div class="card-copy"><p class="brand"><span>✳</span>A LOT HAPPENED HERE</p><h2>Ali</h2><p class="tagline">Six people. One story. Still going.</p></div><div class="qr-slot"><div><b>QR GOES<br/>HERE</b><small>/?member=ali</small></div></div><p class="micro">AND WE’RE NOT DONE YET.</p></article>
+  <article class="card member-malak"><div class="card-copy"><p class="brand"><span>✳</span>A LOT HAPPENED HERE</p><h2>Malak</h2><p class="tagline">Six people. One story. Still going.</p></div><div class="qr-slot"><div><b>QR GOES<br/>HERE</b><small>/?member=malak</small></div></div><p class="micro">AND WE’RE NOT DONE YET.</p></article>
+  <article class="card member-mohamed"><div class="card-copy"><p class="brand"><span>✳</span>A LOT HAPPENED HERE</p><h2>Mohamed</h2><p class="tagline">Six people. One story. Still going.</p></div><div class="qr-slot"><div><b>QR GOES<br/>HERE</b><small>/?member=mohamed</small></div></div><p class="micro">AND WE’RE NOT DONE YET.</p></article>
+</main>
+</body>
+</html>
